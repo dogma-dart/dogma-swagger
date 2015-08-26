@@ -51,10 +51,12 @@ Future<Null> build(List<String> args,
 
   // Parse the swagger file
   var api = await yamlFile(rootSwagger, clone: true);
-  var modelSchema = api['definitions'];
 
   // Build the models library
-  var rootLibrary = modelsLibrary(modelSchema, packageName, modelLibrary, modelPath);
+  //
+  // The call to modelsLibrary expects definitions in 'definitions' which is
+  // already the case in the swagger file.
+  var rootLibrary = modelsLibrary(api, packageName, modelLibrary, modelPath);
 
   await buildModels(rootLibrary, join(modelPath));
 
