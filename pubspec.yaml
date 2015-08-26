@@ -4,11 +4,9 @@ description: API generation using a Swagger definition.
 environment:
   sdk: '>=1.12.0-dev.4.0 <2.0.0'
 dependencies:
-  args: '^0.13.2'
   dogma_codegen:
     path: ../dogma-codegen
   dogma_json_schema:
     path: ../dogma-json-schema
-  yaml: '^2.1.3'
 dev_dependencies:
   test: ^0.12.3+9
