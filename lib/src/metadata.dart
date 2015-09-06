@@ -3,10 +3,18 @@
 // Use of this source code is governed by a zlib license that can be found in
 // the LICENSE file.
 
-library dogma_swagger.metadata;
+library dogma_swagger.src.metadata;
+
+//---------------------------------------------------------------------
+// Imports
+//---------------------------------------------------------------------
 
 import 'package:dogma_codegen/metadata.dart';
 import 'package:dogma_codegen/src/codegen/query_generator.dart';
+
+//---------------------------------------------------------------------
+// Library contents
+//---------------------------------------------------------------------
 
 /// Metadata for a RESTful API endpoint.
 class RestEndpointMetadata {
